@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+body, h1, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.check__list__icon {
+    width: 50px;
+}
+
+header {
+    padding: 20px 30px;
+    background-color: #0586ff87;
+    display: flex;
+    align-items: center;
+    gap: 20px;    
+    color: rgba(0, 0, 0, 0.825);
+}
+
+.header__words {
+    display: flex;
+    flex-direction: column;
+    line-height: 3.2ch;
+}
+
+.add__task__form {
+    border: 1px solid gray;
+    width: fit-content;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    margin-top: 3em;
+}
+
+.add__task__form input {
+    /* height: 1.7em; */
+    width: 300px;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+.add__task__form button {
+    
+    
+    font-size: 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+.add__btn__inactive {
+    background-color: transparent;
+    border: 2px solid gray;
+    color: gray;
+}
+
+.add__btn__active {
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+}
+
+.sidebar {
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tasks {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding-left: 5px;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+
+    &:hover {
+        color: #000000d4;
+    }
+}
+
+.tasks__active {
+    border-left: 5px solid green;
+    font-size: 1rem
+}
+
+.task__icon {
+    width: 25px;
+}
+.completed__icon {
+    width: 23px;
+}
+
+.main {
+    display: flex;
+    gap: 5em;
+}
+
+.task__list {
+    background-color: #0586ff87;
+    margin-top: 2em;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.task__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkIsDoneGreen {
+    background-color: rgba(8, 179, 8, 0.73);
+    color: white;
+    font-size: 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 3px 1px 3px;
+}
+
+.checkIsDoneYellow {
+    background-color: rgba(179, 56, 8, 0.73);
+    color: white;
+    font-size: 0.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 3px 1px 3px;
+}
+
+.edit__btn__img, .save__btn__img {
+    width: 15px
+}
+
+.edit__btn, .save__btn {
+    background-color:rgba(0, 0, 0, 0.768);
+    border: none;
+    padding: 3px 4px 3px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.save__btn {
+    background-color:rgba(12, 137, 35, 0.768);
+    padding: 5px 6px 6px 8px;
+}
+
+.task__description {
+    font-size: 1.05rem;
+}
+
+.edit__input {
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.edit__checkbox {
+    width: 30px;
+    height: 30px;
+    cursor: pointer
+}
+
+.task__list > h3 {
+    text-align: center;
+}
+
+@media screen and (max-width: 725px) {
+    .main {
+        flex-direction: column;
+        gap: 1em;
+        padding: 0px 20px
+    }
+    .sidebar {
+        flex-direction: row;
+        margin: 20px 0px;
+    }
+    .add__task__form {
+        margin-top: 0px;
+        /* padding: cd 0px; */
+    }
+    .add__task__form input {
+        width: 100%;
+    }
+}
